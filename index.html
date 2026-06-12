@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Story Homepage</title>
+</head>
+<!-- THE BACKGROUND CODE IS RIGHT HERE IN THE BODY TAG -->
+<body style="
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #ffffff; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding: 40px; 
+    max-width: 800px; 
+    margin: 0 auto;
+">
+
+    <h1>Clash Of The Elements</h1>
+    <p style="color: #cccccc;">Click a chapter below to start reading on its own page.</p>
+    <hr style="border: 0; border-top: 1px solid #444; margin: 20px 0;">
+
+    <!-- DROPDOWN MENU -->
+    <details open>
+        <summary style="font-size: 1.5em; font-weight: bold; cursor: pointer; color: #4da6ff;">
+            📖 Table of Contents
+        </summary>
+        <br>
+        <nav>
+            <ul style="line-height: 1.8; font-size: 1.1em;">
+                <!-- Classic Blue Underlined Hyperlinks -->
+                <li><a href="chapter1.html" style="color: #4da6ff;">Chapter 1: The Right Holder Of Great Power</a></li>
+                <li><a href="chapter2.html" style="color: #4da6ff;">Chapter 2: The First Battle and A Victory</a></li>
+                <li><a href="chapter3.html" style="color: #4da6ff;">Chapter 3: The Recruting</a></li>
+                <li style="color: #888888;"><em>Chapter 4: Coming Soon...</em></li>
+            </ul>
+        </nav>
+    </details>
+
+    <hr style="border: 0; border-top: 1px solid #444; margin: 40px 0;">
+
+    <!-- FEEDBACK FORM -->
+    <section style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px;">
+        <h3 style="margin-top: 0;">💬 Drop Your Feedback</h3>
+        <form>
+            <label for="reader-name">Name (Optional):</label><br>
+            <input type="text" id="reader-name" name="name" style="width: 100%; max-width: 300px; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #555; background: #222; color: #fff;"><br><br>
+            
+            <label for="feedback-text">Your Thoughts:</label><br>
+            <textarea id="feedback-text" name="feedback" rows="5" style="width: 100%; max-width: 500px; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #555; background: #222; color: #fff;"></textarea><br><br>
+            
+            <input type="submit" value="Submit Feedback" style="background: #4da6ff; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+        </form>
+    </section>
+
+</body>
+</html>
