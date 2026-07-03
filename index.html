@@ -2,66 +2,214 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Story Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Of The Elements - Official Hub</title>
+    
+    <!-- 🎨 LINK TO EXTERNAL NEON CSS STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<!-- THE BACKGROUND CODE IS RIGHT HERE IN THE BODY TAG -->
-<body style="
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('background.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
-    color: #ffffff; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    padding: 40px; 
-    max-width: 800px; 
-    margin: 0 auto;
-">
+<body>
 
-    <h1>Clash Of The Elements</h1>
-    <p style="color: #cccccc;">Click a chapter below to start reading on its own page.</p>
-    <hr style="border: 0; border-top: 1px solid #444; margin: 20px 0;">
+    <!-- 🗺️ NAVIGATION ELEMENT TABS -->
+    <div class="nav-container">
+        <button class="tab-btn active" id="btn-home" onclick="switchTab('home')">Home</button>
+        
+        <!-- GLIDING HUB COMPONENT -->
+        <div class="dropdown">
+            <button class="tab-btn" id="btn-lore">Lore & Cast 👇</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="switchTab('about-story')">About the Story</a>
+                <a href="#" onclick="switchTab('about-characters')">About the Characters</a>
+                <a href="#" onclick="switchTab('about-author')">About the Author</a>
+            </div>
+        </div>
 
-    <!-- DROPDOWN MENU -->
-    <details open>
-        <summary style="font-size: 1.5em; font-weight: bold; cursor: pointer; color: #4da6ff;">
-            📖 Table of Contents
-        </summary>
-        <br>
-        <nav>
-            <ul style="line-height: 1.8; font-size: 1.1em;">
-                <!-- Classic Blue Underlined Hyperlinks -->
-                <li><a href="chapter1.html" style="color: #4da6ff;">Chapter 1: The Right Holder Of Great Power</a></li>
-                <li><a href="chapter2.html" style="color: #4da6ff;">Chapter 2: The First Battle and A Victory</a></li>
-                <li><a href="chapter3.html" style="color: #4da6ff;">Chapter 3: The Recruting</a></li>
-                <li style="color: #888888;"><em>Chapter 4: Coming Soon...</em></li>
+        <button class="tab-btn" id="btn-policy" onclick="switchTab('policy')">Rules & Rights</button>
+    </div>
+
+    <!-- 💎 CORE MULTI-PAGE HUB CONTENT INTERFACE -->
+    <div class="main-container">
+
+        <!-- 🏠 TAB 1: HOME PLATFORM -->
+        <div id="home" class="content-section active">
+            <h1>CLASH OF THE ELEMENTS</h1>
+            <p style="text-align: center; font-size: 1.1em; color: #555;">Step into the epic cosmic elemental war. Unleash the energy levels within.</p>
+            
+            <div class="chapter-list">
+                <a href="chapter1.html" class="chapter-link">⚡ Read Chapter 1</a>
+                <a href="chapter2.html" class="chapter-link">🌕 Read Chapter 2</a>
+                <a href="chapter3.html" class="chapter-link">🌊 Read Chapter 3</a>
+		<a href="chapter4.html" class="chapter-link">🗣️ Read Chapter 4</a>
+                
+            </div>
+                        <!-- 🟢 SPOTIFY READING MUSIC COMPONENT -->
+            <div style="text-align: center; margin-top: 35px; padding: 20px; background: rgba(30, 215, 96, 0.05); border-radius: 12px; border: 1px solid rgba(30, 215, 96, 0.2);">
+                <p style="font-size: 0.95em; color: #555555; margin-bottom: 12px; font-family: sans-serif; letter-spacing: 1px; font-weight: bold; text-transform: uppercase;">
+                    🎧 Want background music while reading?
+                </p>
+                <a href="https://spotify.com" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #1db954, #1ed760); color: white; text-decoration: none; padding: 12px 28px; font-size: 1.1em; font-weight: bold; border-radius: 25px; box-shadow: 0 4px 12px rgba(29, 185, 84, 0.3); text-transform: uppercase; letter-spacing: 1px; font-family: sans-serif;">
+                    🟢 Open Spotify Player
+                </a>
+            </div>
+
+            <!-- 📢 LIVE INTEGRATED VISITOR COUNT DISPLAY -->
+            <div style="text-align: center; margin-top: 45px;">
+                <p style="font-size: 0.9em; color: #555555; margin-bottom: 8px; font-family: sans-serif; letter-spacing: 1px; font-weight: bold;">
+                    Total Story Views:
+                </p>
+                <!-- CORRECTED TRACKING VISITOR BADGE LINK -->
+                <img src="https://seeyoufarm.com" alt="Hit Counter">
+            </div>
+        </div>
+
+        <!-- 📖 TAB 2A: ABOUT THE STORY -->
+        <div id="about-story" class="content-section">
+            <h2>About the Story</h2>
+            <p><strong>The Universe is Fractured. The Gods are Awakening.</strong></p>
+            <p>For centuries, humanity lived under the illusion of peace, completely blind to the primordial currents of cosmic energy flowing right beneath their feet. That illusion shattered the moment <strong>Nathan</strong> unlocked his dormant super elemental energy. Fusing the unstable, crackling electric currents of <em>Crimson-Shock</em> with the devastating, raw volcanic heat of <em>Blaze</em>, Nathan commands a power capable of altering the fabric of reality itself. Yet, he has barely scratched the surface. Hidden deep within his bloodline lies a terrifying true potential—a Stage Two energy multiplication that remains locked, waiting for the ultimate catalyst to tear it open.</p>
+
+            <p style="color: #0077ff; font-weight: bold; margin-top: 25px;">🌌 THE COSMIC LEGEND OF PEAFURES</p>
+            <p>This is not a simple war for survival—it is an ancient puzzle set by the gods. Before time had a name, <strong>Peafures</strong>, the supreme mother deity of all creation, gave birth to two opposing forces: Aurelius, the god of absolute light, and Acheron, the god of eternal darkness. Recognizing that their clashing powers would tear the stars apart, Peafures forged a massive cosmic artifact of unimaginable authority, split it into two legendary pieces, and scattered them across the darkest coordinates of the universe. To ensure these fragments never fell into the wrong hands, she deployed <strong>Ten Alien Guardians</strong>. Identical, silent, and ancient, these cosmic sentinels stand as unmoving statues across alien worlds—perfectly peaceful to travelers, but ruthlessly lethal to anyone foolish enough to reach for the artifact.</p>
+
+            <p style="color: #0077ff; font-weight: bold; margin-top: 25px;">🕸️ THE SHADOW OF THE MASTERMIND</p>
+            <p>But the darkness has found a loophole. A mysterious, faceless Mastermind is pulling the strings from the deep void. Operating through a network of terrifying rogue elementals known as the Achelments, this mastermind seeks to hunt down the artifact pieces and rewrite reality. From the regenerating stone armor of Terra-Voss (who possesses three distinct lives granted by the dark gods) to the decaying root structures of Death-Vine, the vanguard is moving. Even now, the low-energy stealth spy known as the Gloom Spawner blends into the background of high school life completely undetected, pulling down the barrier to summon armies of thousands of Medium-class Gloomers straight into the human realm.</p>
+            
+            <p style="color: #0077ff; font-weight: bold; margin-top: 25px;">🚀 CHOOSE YOUR PATH</p>
+            <p>The countdown to a full-scale cosmic war has officially begun. Will Nathan master his volatile energies before the Achelments execute their ultimate kidnapping plot against Lyra? Can the Aurements stand united when the ultimate betrayal strikes their inner circle from within? The answers lie ahead. Navigate over to the Home Tab right now to discover the files of his elemental allies, unmask the threat profiles of his villains, and explore the sprawling cosmic adventures waiting for you in Clash Of The Elements!</p>
+        </div> <!-- CLOSES THE STORY TAB CLEANLY -->
+
+        <!-- 👥 TAB 2B: ABOUT THE CHARACTERS -->
+        <div id="about-characters" class="content-section">
+            <h2>About the Characters</h2>
+            
+            <!-- ⚡ NATHAN BLOCK -->
+            <div style="background: rgba(77, 166, 255, 0.05); padding: 25px; border-radius: 12px; border: 1px solid rgba(77,166,255,0.2); margin-bottom: 30px;">
+                <h3 style="color: #0077ff; margin-top: 0; font-size: 1.8em; letter-spacing: 1px;">⚡ NATHAN</h3>
+                <p><strong>Character Profile:</strong> A quiet 7th grader until unlocking supernatural powers, saving the world is in his hands.</p>
+                
+                <p style="font-weight: bold; color: #4da6ff; text-transform: uppercase; margin-top: 20px;">⚡ CRIMSON-SHOCK (Thunder Powers - Unlocked)</p>
+                <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+                    <li>🔴 Thunderbolt</li>
+                    <li>🔴 Thunder Rain</li>
+                    <li>🔴 Thunder Devourer (Lightning Ball)</li>
+                    <li>🔴 Thunder Shock</li>
+                    <li>🔴 Summon: Thunder Eagle</li>
+                </ul>
+
+                <p style="font-weight: bold; color: #ff5533; text-transform: uppercase; margin-top: 25px;">🔥 BLAZE (Fire Powers - Unlocked)</p>
+                <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+                    <li>🔥 Fiery Chain</li>
+                    <li>🔥 Rapid multiple fireballs</li>
+                    <li>🔥 Massive Fireball</li>
+                    <li>🔥 Lava Devourer</li>
+                    <li>🔥 Fire Dragon</li>
+                    <li>🔥 Summon: Fire Dragon</li>
+                </ul>
+            </div>
+
+                   <!-- 🌊 KIRA BLOCK -->
+        <div style="background: rgba(77, 166, 255, 0.05); padding: 25px; border-radius: 12px; border: 1px solid rgba(77,166,255,0.2); margin-bottom: 30px;">
+            <h3 style="color: #4da6ff; margin-top: 0; font-size: 1.8em; letter-spacing: 1px;">🌊 KIRA / LUMEN & RIPTIDE</h3>
+            <p><strong>Character Profile:</strong> A powerful 9th grader who stands as the absolute powerhouse and unbreakable tank of the Aurements. Kira commands massive physical endurance and heavy defensive control to shield her inner circle.</p>
+            
+            <p style="font-weight: bold; color: #ffae19; text-transform: uppercase; margin-top: 20px;">✨ FORM 1: LUMEN (Light Form)</p>
+            <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+                <li>☀️ <strong>Solar Ray Burst</strong> – Wide flash of light that instantly blinds surrounding Gloomers and disrupts their senses.</li>
+                <li>☀️ <strong>Photonic Searing Beam</strong> – Highly concentrated, continuous laser beam that burns through incoming projectiles.</li>
+                <li>☀️ <strong>Visi-Glasses Overdrive</strong> – Custom orange tactical gear used to see hidden spies and track low-energy summoners.</li>
+                <li>☀️ <strong>Light-Shot Barrage</strong> – Fires compressed bullets of solid light from her fingertips like an automatic pulse rifle.</li>
+                <li>☀️ <strong>Prism Shield Sphere</strong> – Reflective dome of hard-light photons that anchors around the team to block environmental strikes.</li>
+                <li>☀️ <strong>Solid Light Rod</strong> – Manifests a heavy staff of dense light energy used as a high-impact melee weapon to shatter shields.</li>
             </ul>
-        </nav>
-    </details>
 
-    <hr style="border: 0; border-top: 1px solid #444; margin: 40px 0;">
+            <p style="font-weight: bold; color: #0077ff; text-transform: uppercase; margin-top: 25px;">🌊 FORM 2: RIPTIDE (Water Form)</p>
+            <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+                <li>🔵 <strong>Geyser Eruption</strong> – Erupts high-pressure water columns violently out of the ground directly beneath enemy formations.</li>
+                <li>🔵 <strong>Hydro-Bubble Containment</strong> – Traps threat targets inside spheres of pressurized water, holding them entirely immobile.</li>
+                <li>🔵 <strong>Water Tsunami</strong> – A massive, sweeping tidal wave wall that crushes obstacles and cleans out enemy sectors.</li>
+                <li>🔵 <strong>Torrential Water Beam</strong> – High-velocity stream from her palms that cuts through heavy physical structures like industrial steel.</li>
+            </ul>
+        </div>
 
-    <!-- FEEDBACK FORM -->
-    <section style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px;">
-        <h3 style="margin-top: 0;">💬 Drop Your Feedback</h3>
-        <form>
-            <label for="reader-name">Name (Optional):</label><br>
-            <input type="text" id="reader-name" name="name" style="width: 100%; max-width: 300px; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #555; background: #222; color: #fff;"><br><br>
+        <!-- 🌕 KAGE BLOCK -->
+        <div style="background: rgba(77, 166, 255, 0.05); padding: 25px; border-radius: 12px; border: 1px solid rgba(77,166,255,0.2); margin-bottom: 30px;">
+            <h3 style="color: #9933ff; margin-top: 0; font-size: 1.8em; letter-spacing: 1px;">🌕 KAGE / MOONDUST</h3>
+            <p><strong>Character Profile:</strong> Nathan’s absolute rival in everything from academics to combat. Kage has a cold, calculating mind and a brilliant tactical awareness, pushing his celestial powers with absolute precision.</p>
             
-            <label for="feedback-text">Your Thoughts:</label><br>
-            <textarea id="feedback-text" name="feedback" rows="5" style="width: 100%; max-width: 500px; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #555; background: #222; color: #fff;"></textarea><br><br>
-            
-            <input type="submit" value="Submit Feedback" style="background: #4da6ff; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;">
-        </form>
-    </section>
-    <!-- LIVE VISITOR HIT COUNTER -->
-<div style="text-align: center; margin-top: 30px; margin-bottom: -35px;">
-    <p style="font-size: 0.9em; color: #cccccc; margin-bottom: 8px; font-family: sans-serif; letter-spacing: 1px;">
-        📢 Total Story Views:
-    </p>
-    <!-- Live SVG Badge Generator -->
-    <img src="https://seeyoufarm.com" alt="Hit Counter">
-</div>
+            <p style="font-weight: bold; color: #b366ff; text-transform: uppercase; margin-top: 20px;">✨ FORM 1: MOONDUST (Moon Form)</p>
+            <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+                <li>🌕 <strong>Lunar Particle Array</strong> – Sweeping wave of glittery, sharp silver dust that forms explosive fields to shred projectiles.</li>
+                <li>🌕 <strong>Eclipse Dome Containment</strong> – Solid spherical shield of moonlight that isolates targets or guards his entire squad.</li>
+                <li>🌕 <strong>Blinding Moon-Light Ray</strong> – Pierces through dark elemental walls while flash-blinding enemy eyes instantly.</li>
+                <li>🌕 <strong>Erupting Lunar Spikes</strong> – Channels power down to force sharp fragments of moon stone to erupt violently upward.</li>
+                <li>🌕 <strong>Moon Shadow Phase</strong> – Blends with the night to phase through solid walls and slide behind enemy lines.</li>
+                <li>🌕 <strong>Summon: Eternal Moon Bear</strong> – Manifests a giant, towering astral bear to tank heavy boss assaults and shatter groups.</li>
+            </ul>
+        </div>
 
+        <!-- 🐈‍⬛ TAIMEN BLOCK (RESTORED!) -->
+        <div style="background: rgba(77, 166, 255, 0.05); padding: 25px; border-radius: 12px; border: 1px solid rgba(77,166,255,0.2); margin-bottom: 30px;">
+            <h3 style="color: #333333; margin-top: 0; font-size: 1.8em; letter-spacing: 1px;">🐈‍⬛ TAIMEN</h3>
+            <p><strong>Character Profile:</strong> A lazy but highly supportive member of the team. Taimen might be a relaxed slacker in class, but he acts as an absolute backup vanguard general the second his allies are in danger.</p>
+            
+            <p style="font-weight: bold; color: #555555; text-transform: uppercase; margin-top: 20px;">🖤 SHADOW (Shadow Powers - Unlocked)</p>
+            <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+                <li>🖤 Summon: Dark Eagle</li>
+                <li>🖤 Summon: Dark Tiger</li>
+                <li>🖤 Summon: Dark Rabbits</li>
+                <li>🖤 Summon: Dark Whale</li>
+                <li>🖤 Shadow Fingers</li>
+                <li>🖤 Shadow Dome</li>
+                <li>🖤 Shadow Void</li>
+            </ul>
+        </div>
+
+        <!-- 🪐 HAZEL / NOVA-PULL BLOCK -->
+        <div style="background: rgba(77, 166, 255, 0.05); padding: 25px; border-radius: 12px; border: 1px solid rgba(77,166,255,0.2); margin-bottom: 30px;">
+            <h3 style="color: #ff66cc; margin-top: 0; font-size: 1.8em; letter-spacing: 1px;">🪐 HAZEL</h3>
+            <p><strong>Character Profile:</strong> An incredibly bubbly and playful girl whose tendency to lose focus sometimes prevents her from unlocking her true, immense potential on the battlefield.</p>
+            
+            <p style="font-weight: bold; color: #ff3399; text-transform: uppercase; margin-top: 20px;">🪐 NOVA-PULL (Gravity Manipulation - Unlocked)</p>
+            <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+                <li>💖 Gravity Punch</li>
+                <li>💖 Gravity Kick</li>
+                <li>💖 Max Gravity</li>
+                <li>💖 Min Gravity</li>
+                <li>💖 Gravity Lift</li>
+                <li>💖 Gravity Throw</li>
+            </ul>
+        </div>
+    </div> <!-- This closes the characters tab block perfectly -->
+
+    <!-- ✍️ TAB 2C: ABOUT THE AUTHOR -->
+    <div id="about-author" class="content-section">
+        <h2>About the Author</h2>
+        <p>Welcome to the official hub of the creator, writing under the legendary pen name <strong>Nizkar Storm</strong>.</p>
+        <p>I am dedicating my absolute lock-in focus to expanding this universe, upgrading its system codes, and relentlessly polishing the elemental archive details for my readers.</p>
+        <p><strong>Announcements:</strong> Chapter 4 is officially live and ready to read! Looking ahead to our first anniversary milestone, if our cosmic story gains fame across the globe, I will be dropping an official Face Reveal and sharing my true identity details right here on this tab! Stay locked in.</p>
+<p>⚡ Subscribe to my official YouTube Channel for live updates and lore drops: 
+   <a href="https://youtube.com/@mamtasharma3942?si=COr9Cs5odlkuRk3N" target="_blank" style="color: #0077ff; font-weight: bold; text-decoration: underline;">
+      Nizkar Storm Official Channel
+   </a>
+</p>
+
+    </div>
+
+    <!-- ⚖️ TAB 3: RULES PROTECTION -->
+    <div id="policy" class="content-section">
+        <h2>Rules & Rights Protection</h2>
+        <p><strong>Copyright © 2026 Clash Of The Elements. All Rights Reserved.</strong></p>
+        <p>All story chapters, character design profiles, Stage Two concepts, and core mechanics are the exclusive creative property of the author, writing under the official pen name Nizkar Storm.</p>
+        <p>No unauthorized re-uploads, digital scraping, or secondary distribution is permitted on any platform without direct author/parental authorization.</p>
+
+    </div>
+
+</div> <!-- This closes the main container layout grid cleanly -->
+
+<!-- ⚙️ LINK TO YOUR EXTERNAL JAVASCRIPT ENGINE -->
+<script src="script.js"></script>
+<!--Hi! I am 11, and we are working on my static story website. It launched on June 12th with 3 chapters. Chapter 4 drops on my birthday, July 3rd! Here is where we left off: [PASTE YOUR LATEST CODE HERE]-->
 
 </body>
 </html>
+
